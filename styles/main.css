@@ -1,0 +1,40 @@
+/*
+===== CONTENT STYLES =====
+ */
+title {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+p {
+
+}
+
+/*
+===== LOGO STYLES =====
+*/
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 150 px;
+}
+.logo img {
+    width: 150px;
+}
+/*
+===== MAIN NAVIGATION STYLES =====
+*/
+.main-navigation ul {
+    padding-left: 0;
+}
+.main-navigation  ls {
+    list-style: none;
+    text-align: center;
+}
