@@ -1,20 +1,28 @@
 /*
 ===== CONTENT STYLES =====
  */
-title {
 
+title, h1, h2, h3 {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
 }
 
 h1 {
-
+    font-size: 4em;
+    line-height: 1.25em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
 }
 
 h2 {
-
+    font-size: 3em;
+    line-height: 1.24em;
+    margin: 0.5em auto 0.5em auto;
 }
 
 p {
-
+    font-family: Raleway, san-serif;
+    font-weight: normal;
 }
 
 /*
@@ -23,7 +31,7 @@ p {
 .logo {
     display: block;
     margin: 0 auto;
-    width: 150 px;
+    width: 150px;
 }
 .logo img {
     width: 150px;
@@ -32,9 +40,34 @@ p {
 ===== MAIN NAVIGATION STYLES =====
 */
 .main-navigation ul {
-    padding-left: 0;
+    padding-left: 40%;
 }
-.main-navigation  ls {
+.main-navigation  li {
     list-style: none;
     text-align: center;
+    margin: 1% 0;
+}
+
+.main-navigation a {
+    display: block;
+    padding: 2% 1%;
+    max-width: 30%;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(67, 67, 67, 0.2);
+    color: rgb(70, 70, 70);
+}
+
+/*.main-navigation a:visited {*/
+/*    color: rgb(100, 100, 100);*/
+/*}*/
+
+.main-navigation a:active {
+    color: rgb(100, 100, 100);
+}
+
+.main-navigation a:hover {
+    background: rgb(70, 70, 70);
+    color: rgb(255, 255, 255);
+    transition: .2s color;
 }
