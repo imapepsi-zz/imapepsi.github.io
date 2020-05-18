@@ -36,27 +36,57 @@ p {
 .logo img {
     width: 150px;
 }
+
 /*
-===== MAIN NAVIGATION STYLES =====
-*/
-.main-navigation ul {
-    padding-left: 40%;
-}
-.main-navigation  li {
-    list-style: none;
-    text-align: center;
-    margin: 1% 0;
+==== MAIN NAVIGATION STYLES DESKTOP
+ */
+
+.main-navigation {
+    background-color: rgba(67, 67, 67, 0.2);
+    height: 50px;
 }
 
-.main-navigation a {
-    display: block;
-    padding: 2% 1%;
-    max-width: 30%;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: rgba(67, 67, 67, 0.2);
-    color: rgb(70, 70, 70);
+.main-navigation ul {
+
 }
+
+.main-navigation ul li {
+    list-style-type: none;
+    width: 10%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+li a {
+    color: white;
+    line-height: 50px;
+    padding: 0% 1%;
+    display: block;
+    text-decoration: none;
+}
+
+/*
+===== MAIN NAVIGATION STYLES MOBILE =====
+*/
+/*.main-navigation ul {*/
+/*    padding-left: 40%;*/
+/*}*/
+/*.main-navigation  li {*/
+/*    list-style: none;*/
+/*    text-align: center;*/
+/*    margin: 1% 0;*/
+/*}*/
+
+/*.main-navigation a {*/
+/*    display: block;*/
+/*    padding: 2% 1%;*/
+/*    max-width: 30%;*/
+/*    text-decoration: none;*/
+/*    text-transform: uppercase;*/
+/*    background: rgba(67, 67, 67, 0.2);*/
+/*    color: rgb(70, 70, 70);*/
+/*}*/
 
 .main-navigation a:active {
     color: rgb(100, 100, 100);
