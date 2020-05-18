@@ -26,6 +26,36 @@ p {
 }
 
 /*
+===== BUTTONS AND LINKS =====
+*/
+
+.button-link {
+    display: block;
+    padding: 0% 2%;
+    max-width: 30%;
+    background: rgba(67, 67, 67, 0.2);
+    color: rgb(70, 70, 70);
+    line-height: 50px;
+    width: 20%;
+}
+
+.button-link a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button-link a:active {
+    color: rgb(100, 100, 100);
+}
+
+.button-link a:hover {
+    background: rgb(70, 70, 70);
+    color: rgb(255, 255, 255);
+    transition: .2s color;
+}
+
+/*
 ===== LOGO STYLES =====
 */
 .logo {
