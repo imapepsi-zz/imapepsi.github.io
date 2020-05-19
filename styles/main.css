@@ -8,19 +8,20 @@ title, h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1.25em;
     margin-top: 0.5em;
     margin-bottom: 0;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 3.5em;
     line-height: 1.24em;
     margin: 0.5em auto 0.5em auto;
 }
 
 p {
+    font-size: 2em;
     font-family: Raleway, san-serif;
     font-weight: normal;
 }
@@ -29,30 +30,28 @@ p {
 ===== BUTTONS AND LINKS =====
 */
 
-.button-link {
-    display: block;
-    padding: 0% 2%;
-    max-width: 30%;
-    background: rgba(67, 67, 67, 0.2);
-    color: rgb(70, 70, 70);
-    line-height: 50px;
-    width: 20%;
-}
-
-.button-link a {
-    text-decoration: none;
-    text-transform: uppercase;
+.button {
+    border: none;
+    color: white;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.2s;
+    cursor: pointer;
 }
 
-.button-link a:active {
-    color: rgb(100, 100, 100);
+.main-button {
+    background-color: white;
+    color: #0f75bd; /* Blue */
+    padding: 0.5% 2%;
+    margin: 15px 5px;
+    font-size: 20px;
+    border: 2px solid #0f75bd; /* Blue */
 }
 
-.button-link a:hover {
-    background: rgb(70, 70, 70);
-    color: rgb(255, 255, 255);
-    transition: .2s color;
+.main-button:hover {
+    background-color: #0f75bd; /* Blue */
+    color: white;
 }
 
 /*
@@ -79,7 +78,7 @@ p {
 .main-navigation {
     padding-left: 20%;
     padding-right: 20%;
-    background-color: rgba(67, 67, 67, 0.2);
+    background-color: #808185; /* Gray */
     height: 50px;
 }
 
@@ -89,8 +88,8 @@ p {
 
 .main-navigation ul li {
     list-style-type: none;
-    width: 15%; /*width: 150px;*/
-    float: left;
+    width: 125px; /* 15% */
+    display: inline-block;
     text-align: center;
     text-transform: uppercase;
 }
@@ -136,7 +135,7 @@ p {
 }
 
 .main-navigation a:hover {
-    background: rgb(70, 70, 70);
-    color: rgb(255, 255, 255);
+    background: white;
+    color: #808185;
     transition: .2s color;
 }
