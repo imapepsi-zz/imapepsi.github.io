@@ -105,26 +105,25 @@ ul {
  */
 
 .main-navigation {
-    padding-left: 20%;
-    padding-right: 20%;
-    background-color: #808185; /* Gray */
+    padding-left: 30%;
+    padding-right: 30%;
+    background-color: white;
     height: 50px;
-}
-
-.main-navigation ul {
-
 }
 
 .main-navigation ul li {
     list-style-type: none;
-    width: 125px; /* 15% */
-    display: inline-block;
+    /*width: 125px; !* 15% *!*/
+    min-width: 125px;
+    /*display: inline-block;*/
+    float: left;
+    position: relative;
     text-align: center;
     text-transform: uppercase;
 }
 
 .main-navigation li a {
-    color: white;
+    color: #808185;
     line-height: 50px;
     display: block;
     text-decoration: none;
@@ -158,8 +157,8 @@ ul {
 }
 
 .main-navigation a:hover {
-    background: white;
-    color: #808185;
+    background: #808185;
+    color: white;
     transition: .2s color;
 }
 
