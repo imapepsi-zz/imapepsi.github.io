@@ -1,10 +1,15 @@
 /*
-===== CONTENT STYLES =====
+===== Global Attributes =====
  */
 
-/*title, h1, h2, h3, p, footer, button {*/
-/*    margin-left: 2em;*/
-/*}*/
+* {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/*
+===== CONTENT STYLES =====
+ */
 
 title, h1, h2, h3 {
     font-family: 'PT Serif', serif;
@@ -91,8 +96,8 @@ ul {
 
 .logo-name {
     font-size: 50px;
-    text-align: center;
-    margin-left: 0;
+    text-align: left;
+    display: inline;
 }
 
 /*
@@ -116,11 +121,15 @@ ul {
     height: 50px;
     width:100%;
     margin-top: 1%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .main-navigation li {
     list-style-type: none;
     float: right;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .main-navigation a {
@@ -131,6 +140,8 @@ ul {
     text-decoration: none; /* Removes Underline */
     text-transform: uppercase;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .main-navigation a.active {
