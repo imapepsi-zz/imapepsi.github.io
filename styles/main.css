@@ -2,6 +2,10 @@
 ===== CONTENT STYLES =====
  */
 
+/*title, h1, h2, h3, p, footer, button {*/
+/*    margin-left: 2em;*/
+/*}*/
+
 title, h1, h2, h3 {
     font-family: 'PT Serif', serif;
     font-weight: bold;
@@ -17,7 +21,7 @@ h1 {
 h2 {
     font-size: 20px; /* 3.5em; */
     line-height: 25px; /* 1.24em; */
-    margin: 0.5em auto 0.5em auto;
+    margin: 0.5em auto 0.5em ;
 }
 
 h3 {
@@ -88,6 +92,7 @@ ul {
 .logo-name {
     font-size: 50px;
     text-align: center;
+    margin-left: 0;
 }
 
 /*
@@ -105,28 +110,38 @@ ul {
  */
 
 .main-navigation {
-    padding-left: 30%;
-    padding-right: 30%;
+    position: center;
     background-color: white;
-    height: 50px;
-}
-
-.main-navigation ul li {
-    list-style-type: none;
-    /*width: 125px; !* 15% *!*/
-    min-width: 125px;
-    /*display: inline-block;*/
-    float: left;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.main-navigation li a {
-    color: #808185;
-    line-height: 50px;
     display: block;
-    text-decoration: none;
+    height: 50px;
+    width:100%;
+    margin-top: 1%;
+}
+
+.main-navigation li {
+    list-style-type: none;
+    float: right;
+}
+
+.main-navigation a {
+    color: #808185;
+    width: 125px;
+    line-height: 50px;
+    display: inherit;
+    text-decoration: none; /* Removes Underline */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-navigation a.active {
+    background-color: #0f75bd;
+    color: white;
+}
+
+.main-navigation a:hover:not(.active) { /* Hover if not active */
+    background: #808185;
+    color: white;
+    transition: .2s color;
 }
 
 /*
@@ -152,15 +167,7 @@ ul {
 /*    color: rgb(70, 70, 70);*/
 /*}*/
 
-.main-navigation a:active {
-    color: rgb(100, 100, 100);
-}
 
-.main-navigation a:hover {
-    background: #808185;
-    color: white;
-    transition: .2s color;
-}
 
 /*
 ===== Slide Show =====
